@@ -1,0 +1,55 @@
+* {
+  font-family: monospace;
+  font-size: 16px;
+}
+
+#login-form {
+  width: 400px;
+  margin: 120px auto 30px auto;
+}
+
+#fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 35px 20px;
+  background-color: aliceblue;
+  border: 1px solid steelblue;
+  border-radius: 5px;
+}
+
+legend {
+  font-size: 20px;
+  font-weight: 700;
+  color: steelblue;
+}
+
+input {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: steelblue;
+}
+
+input:focus {
+  outline: 1px solid steelblue;
+}
+
+#buttonLogin {
+  padding: 15px 0;
+  border: 1px solid steelblue;
+  background-color: white;
+  border-radius: 5px;
+}
+
+#buttonLogin:hover {
+  font-weight: bold;
+  color: steelblue;
+  cursor: pointer;
+}
+
+#credentialsOneClickContainer {
+  display: flex;
+  justify-content: center;
+}
