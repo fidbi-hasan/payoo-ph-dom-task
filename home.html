@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payoo Home</title>
+    <link rel="stylesheet" href="styles/home.css">
+  </head>
+  <body>
+    <h1>Welcome to Payoo Dashboard!</h1>
+
+    <section id="top-bar">
+      <div class="balance">
+        <strong>$<span id="currentAmount">45000</span></strong>
+        <p style="font-size: 12px; margin-top: 0; color: rgb(116, 116, 116);">Available Balance</p>
+      </div>
+      <div class="logout">
+        <button id="logout-button">Logout</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>🔥 Welcome to Payooo!</h2>
+      <p>Enjoy easy and convenient financial services with us. Cashout charge is low.</p>
+
+      <div id="button-container">
+        <button id="btnAddMoney">Add Money</button>
+        <button id="btnCashout">Cashout</button>
+        <button id="btnTransferMoney">Transfer Money</button>
+        <button id="btnGetBonus">Get Bonus</button>
+        <button id="btnPayBill">Pay Bill</button>
+        <button id="btnTransaction">Transaction</button>
+      </div>
+    </section>
+
+    <section id="option-add-money">
+      <form id="add-money-form">
+        <fieldset id="fieldsetAddMoney">
+          <legend>Add money</legend>
+          <select id="bankOptions">
+            <option >Select Bank</option>
+            <option >IBBL</option>
+            <option >City Bank</option>
+            <option >Prime Bank</option>
+            <option >Standard Charterd Bank</option>
+          </select>
+          <input type="text" id="accountNumberAddMoney" placeholder="Account No.">
+          <input type="number" id="addAmount" placeholder="Enter amount">
+          <input type="password" id="pin-addMoney" placeholder="Enter Pin">
+          <button id="confirmAddMoney">Add money</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <section id="option-cashout">
+      <form id="cashout-form">
+        <fieldset id="fieldsetCashout">
+          <legend>Cashout</legend>
+          <input type="text" id="agentNumber" placeholder="Agent Number">
+          <input type="number" id="cashoutAmount" placeholder="Enter amount">
+          <input type="password" id="pinCashout" placeholder="Enter Pin">
+          <button id="confirmCashout">Cashout</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <section id="option-transferMoney">
+      <form id="transferMoney-form">
+        <fieldset id="fieldsetTransferMoney">
+          <legend>Transfer Money</legend>
+          <input type="text" id="accountNumberTransferMoney" placeholder="User Account Number">
+          <input type="number" id="transferAmount" placeholder="Enter amount">
+          <input type="password" id="pinTransferMoney" placeholder="Enter Pin">
+          <button id="confirmTransfer">Transfer</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <section id="option-getBonus">
+      <form id="getBonus-form">
+        <fieldset id="fieldsetGetBonus">
+          <legend>Get Bonus</legend>
+          <input type="text" id="bonusCoupon" placeholder="Enter bonus coupon">
+          <button id="confirmBonus">Get Bonus</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <section id="option-payBill">
+      <form id="payBill-form">
+        <fieldset id="fieldsetPayBill">
+          <legend>Pay Bill</legend>
+          <select id="billOptions">
+            <option >Select Bill</option>
+            <option >Electricity</option>
+            <option >Gas</option>
+            <option >Water</option>
+            <option >Broadband</option>
+          </select>
+          <input type="text" id="billerAccountNumber" placeholder="Biller Account Number">
+          <input type="number" id="billAmount" placeholder="Enter bill amount">
+          <input type="password" id="pinPayBill" placeholder="Enter Pin">
+          <button id="confirmPayment">Pay Now</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <section id="option-transactions">
+      <form id="transactionRecord-form">
+        <fieldset id="fieldsetTransactionRecord">
+          <legend>Transactions</legend>
+          <strong>Electricity Bill</strong>
+          <p>Today 1:20 AM</p>
+          <strong>Broadband</strong>
+          <p>Yesterday 10:28 PM</p>
+          <strong>Hosting</strong>
+          <p>13 August, 2025 12:32 PM</p>
+        </fieldset>
+      </form>
+    </section>
+
+    <script src="scripts/utilities.js"></script>
+    <script src="scripts/home.js"></script>
+    <script src="scripts/addMoney.js"></script>
+    <script src="scripts/cashout.js"></script>
+  </body>
+</html>
