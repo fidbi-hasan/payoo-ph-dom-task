@@ -14,6 +14,13 @@ function getTextFieldValueById(id) {
   return convertedInputValue;
 }
 
+function getSelectFieldValueById(id) {
+  const selectElement = document.getElementById(id);
+  const selectedValue = selectElement.value;
+
+  return selectedValue;
+}
+
 function showDefaultOption() {
   document.getElementById('option-cashout').style.display = 'none';
   document.getElementById('option-transferMoney').style.display = 'none';
